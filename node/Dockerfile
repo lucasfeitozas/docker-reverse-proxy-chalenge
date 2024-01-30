@@ -3,7 +3,6 @@ FROM node:18 AS build
 WORKDIR /usr/src/app
 
 COPY package*.json ./
-RUN npm install -y
 COPY . .
 
 ENV DOCKERIZE_VERSION v0.7.0
